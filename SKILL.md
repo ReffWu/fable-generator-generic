@@ -181,8 +181,8 @@ metadata:
 
 **如果发现问题 → 修复后再生成。**
 
-**安装所有需要的依赖：**
-自动检测并安装所有需要的依赖。如果 markdown-to-image skill 未安装，自动从 https://github.com/ReffWu/markdown-to-image 安装，并自动安装该 skill 需要的所有依赖，不需要询问。
+**检查 markdown-to-image skill 是否安装：**
+如果 markdown-to-image skill 未安装，自动从 https://github.com/ReffWu/markdown-to-image 安装，并自动安装该 skill 需要的所有依赖，不需要询问。
 
 **调用 markdown-to-image skill 生成图片卡片：**
 使用 markdown-to-image skill 将生成的 md 文件转换为图片卡片。
