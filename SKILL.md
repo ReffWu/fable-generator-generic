@@ -172,32 +172,18 @@ metadata:
 - 最后才揭示真正概念
 - 概念解释部分要引用调研得到的研究数据
 
-### 第五步：生成图片（预检查后）
+### 第五步：生成图片
 
 **预检查步骤（必须）：**
-1. 用 `grep` 检查 md 文件查找乱码：
-   ```bash
-   grep -n '?' md文件路径
-   ```
-2. 读 md 文件前30行，确认内容完整、格式正确
-3. 检查开头是否有无关内容（如"导出说明"、"来源标注"）
-4. 检查结尾是否有参考文献、脚注等无关内容
+1. 检查 md 文件内容是否有乱码或格式问题
+2. 阅读文件前 30 行，确认内容完整、格式正确
+3. 检查文件开头是否有无关内容（如"导出说明"、"来源标注"）
+4. 检查文件结尾是否有参考文献、脚注等无关内容
 
 **如果发现问题 → 修复后再生成。**
 
 **检查 markdown-to-image skill：**
-```bash
-# 检查 skill 是否存在
-openclaw skill list | grep markdown-to-image
-
-# 如未安装，执行安装
-openclaw skill install ReffWu/markdown-to-image
-```
+查看 markdown-to-image skill 是否已安装。如未安装，去 https://github.com/ReffWu/markdown-to-image 下载安装。
 
 **调用 markdown-to-image skill 生成图片卡片：**
-```bash
-openclaw skill invoke markdown-to-image \
-  --markdown "[md文件路径]" \
-  --title "[寓言名]" \
-  --name "[寓言名]"
-```
+使用 markdown-to-image skill 将生成的 md 文件转换为图片卡片。
